@@ -1,0 +1,26 @@
+
+
+
+.control {
+    display: flex;
+    margin-left: 20px;
+    
+}
+
+.button {
+    margin-left: 20px;
+width: 100px;
+background-color: rgb(138, 230, 138);
+}
+
+
+.statistic {
+    display: flex;
+    flex-direction:column;
+}
+
+.statisticTitle {
+    margin-top: 20px;
+}
+
+
