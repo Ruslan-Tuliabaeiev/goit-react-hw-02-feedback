@@ -3,7 +3,7 @@ import React from 'react';
 // import PropTypes from "prop-types"
 import style from './feedback.module.css';
 
-export const Control = ({handleIncrement, neutralleIncrement, badleIncrement}) => {
+export const Control = ({handleIncrement, neutralleIncrement, badleIncrement, toggle}) => {
     return(
         <div className={style.control}>
         <span className={style.controlList}>
@@ -11,10 +11,12 @@ export const Control = ({handleIncrement, neutralleIncrement, badleIncrement}) =
 onClick={handleIncrement} >Good</button>
 
 <button className={style.button} type="button"
- onClick={neutralleIncrement}>Neutral</button>
+ onClick={neutralleIncrement } >Neutral</button>
 
 <button className={style.button} type="button"
  onClick={badleIncrement} >Bad</button>
+
+
 </span>
 </div>
     )

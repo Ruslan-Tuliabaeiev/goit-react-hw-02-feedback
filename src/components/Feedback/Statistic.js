@@ -10,20 +10,21 @@ export const Statistic = ({good, neutral, bad, total, positive} ) => {
 
 
         <div className={style.statistic} >
-        <h2 className={style.statisticName}>Statistics</h2>
-    <span className={style.statisticTitle}>Good:{good}</span>
+     
+
+   <p className={style.statisticTitle}> <span >Good:{good}</span></p>
     
     
-    <span className={style.statisticTitle}>Neutral:{neutral}</span>
+   <p className={style.statisticTitle}> <span>Neutral:{neutral}</span></p>
     
     
-    <span className={style.statisticTitle}>Bad:{bad}</span>
+   <p className={style.statisticTitle}><span>Bad:{bad}</span></p>
     
     
     
- <span className={style.statisticTitle}>Total:{total}</span>
+ <p className={style.statisticTitle}><span>Total:{total}</span></p>
     
-  <span className={style.statisticTitle}>Positive feedback:{positive}%</span> 
+  <p className={style.statisticTitle}><span>Positive feedback:{positive}%</span> </p>
     
     </div>
 
