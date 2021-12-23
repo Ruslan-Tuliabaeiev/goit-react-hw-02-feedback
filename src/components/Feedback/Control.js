@@ -3,7 +3,7 @@ import React from 'react';
 // import PropTypes from "prop-types"
 import style from './feedback.module.css';
 
-export const Control = ({handleIncrement, neutralleIncrement, badleIncrement, toggle}) => {
+export const Control = ({handleIncrement, neutralleIncrement, badleIncrement}) => {
     return(
         <div className={style.control}>
         <span className={style.controlList}>
