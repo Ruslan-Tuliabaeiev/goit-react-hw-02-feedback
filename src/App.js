@@ -9,7 +9,7 @@ import { Statistic } from './components/Feedback/Statistic'
 
 import { Section } from './components/Section'
 import { Notification } from './components/Notification';
-
+import style from './components/Feedback/feedback.module.css';
 
 class  App extends Component  {
 
@@ -38,8 +38,30 @@ positiveBack = () => {
      )
        };
 
- 
 
+///  Control
+
+ Control = ({handleIncrement, neutralleIncrement, badleIncrement}) => {
+  return(
+    <>
+      <div className={style.control}>
+      <span className={style.controlList}>
+<button className={style.button} type="button" 
+onClick={handleIncrement} >Good</button>
+
+<button className={style.button} type="button"
+onClick={neutralleIncrement } >Neutral</button>
+
+<button className={style.button} type="button"
+onClick={badleIncrement} >Bad</button>
+
+
+</span>
+</div></>
+  )
+}
+
+////
 
 
 render() {
@@ -48,6 +70,7 @@ render() {
   const keys = Object.keys(this.state)
   return (
 <>
+<h1>Please leave feedback</h1>
 <FeedbackOptins
 options={keys}
  onLeaveFeedback={this.handleIncrement}
